@@ -85,11 +85,12 @@
     <string name="pleasetime">タイムを入力してください</string>
     <string name="inputteddata">Inputed data:</string>
     <string name="hour">時間</string>
+    <string name="hours">時間</string>
     <string name="pleasetime2">分と秒の欄に１kmの平均ペースを入力してください</string>
-    <string name="endcalculation">計算完了！¥n進むを押してください</string>
+    <string name="endcalculation">計算完了！\n進むを押してください</string>
     <string name="year">年</string>
     <string name="days">日</string>
-    <string name="youcancalculate">下の欄に距離を入力すると、¥nその距離を何分ではしりきれるのか計算できます。</string>
+    <string name="youcancalculate">下の欄に距離を入力すると、\nその距離を何分ではしりきれるのか計算できます。</string>
     <string name="notext">多分空欄です</string>
     <string name="twodots">多分２つ以上小数点があります</string>
     <string name="copied1">クリップボードに「</string>
