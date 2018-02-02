@@ -15,10 +15,10 @@
     <string name="hurf">Half</string>
     <string name="full">Full</string>
     <string name="wo">min</string><string name="inputt">sec</string><string name="time">hour</string>
-    <string name="minutes">分</string>
-    <string name="seconds">秒</string>
-    <string name="howtouse">使い方</string>
-    <string name="docalculate">計算する</string>
+    <string name="minutes">min</string>
+    <string name="seconds">sec</string>
+    <string name="howtouse">How To Use</string>
+    <string name="docalculate">Calculate</string>
     <string-array name="action_list">
         <item>Track events</item>
         <item>800m</item>
@@ -78,4 +78,21 @@
     <string name="aroundeatth">One round of the earth, about 40Mkm</string>
     <string name="tomoon">To the Moon about 384.Mkm</string>
     <string name="evaluation">Rate this app</string>
- </resources>
+    <string name="meter">m</string>
+    <string name="km">km</string>
+    <string name="distance">distance</string>
+    <string name="pleasedistance">Please input distance</string>
+    <string name="pleasetime">Please input time</string>
+    <string name="inputteddata">Inputed data:</string>
+    <string name="hour">hours</string>
+    <string name="pleasetime2">Please input minutes and seconds of the avarage pace</string>
+    <string name="endcalculation">finished calculation!¥nPlease push Next.</string>
+    <string name="year">years</string>
+    <string name="days">days</string>
+    <string name="youcancalculate">You can calculate the time to run ¥ndesignated distance by inputted pace.</string>
+    <string name="notext">probably nothing was inputted.</string>
+    <string name="twodots">Probably there are points more than two.</string>
+    <string name="copied1"></string>
+    <string name="copied2">was copied into clipboard</string>
+
+</resources>

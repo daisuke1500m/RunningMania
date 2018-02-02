@@ -79,5 +79,19 @@
     <string name="tomoon">月まで 約38.4万km</string>
     <string name="evaluation">このアプリを評価する</string>
     <string name="km">km</string>
-    <string name="distance">ききょｋｙｋ</string>
+    <string name="distance">距離</string>
+    <string name="meter">m</string>
+    <string name="pleasedistance">距離を入力してください</string>
+    <string name="pleasetime">タイムを入力してください</string>
+    <string name="inputteddata">Inputed data:</string>
+    <string name="hour">時間</string>
+    <string name="pleasetime2">分と秒の欄に１kmの平均ペースを入力してください</string>
+    <string name="endcalculation">計算完了！¥n進むを押してください</string>
+    <string name="year">年</string>
+    <string name="days">日</string>
+    <string name="youcancalculate">下の欄に距離を入力すると、¥nその距離を何分ではしりきれるのか計算できます。</string>
+    <string name="notext">多分空欄です</string>
+    <string name="twodots">多分２つ以上小数点があります</string>
+    <string name="copied1">クリップボードに「</string>
+    <string name="copied2">」をコピーしました。</string>
 </resources>
