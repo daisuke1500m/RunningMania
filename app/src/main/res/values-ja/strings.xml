@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ランニングマニア</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="start">すたーと</string>
+    <string name="hakoneekidenouensong">箱根駅伝応援ソング</string>
+    <string name="hakonehe">" 「箱根へ」"</string>
+    <string name="youtubeurl">YouTube URL↓ タップ！</string>
+    <string name="url">https://www.youtube.com/watch?v=Afis9UV3Ixk</string>
+    <string name="hint1">距離を入力</string>
+    <string name="kirometers">km</string>
+    <string name="fivekm">5km</string><string name="tenkm">10km</string><string name="dot">小数点</string>
+    <string name="hurf">ハーフ</string>
+    <string name="full">フル</string>
+    <string name="wo">分</string><string name="inputt">秒</string><string name="time">時間</string>
+    <string name="minutes">分</string>
+    <string name="seconds">秒</string>
+    <string name="howtouse">使い方</string>
+    <string name="docalculate">計算する</string>
+    <string-array name="action_list">
+        <item>トラック種目</item>
+        <item>800m</item>
+        <item>1500m</item>
+        <item>3000m</item>
+    </string-array>
+    <string name="sercleone">①</string>
+    <string name="sercletwo">②</string>
+    <string name="serclethree">③</string>
+    <string name="serclefour">④</string>
+    <string name="serclefive">③</string>
+    <string name="chosedesc">閲覧したい項目をタップして下さい</string>
+    <string name="back">戻る</string>
+    <string name="next">進む</string>
+    <string name="avarageone">1km平均</string>
+    <string name="kph">時速</string>
+    <string name="copy">クリップボードにコピー</string>
+    <string name="continuetorunthispace">このペースで走り続けると...</string>
+    <string name="ahundredmeters">100m</string>
+    <string name="fourhundredmeters">400m</string>
+    <string name="inputdistance">距離を入力してください</string>
+    <string name="zero">0000</string>
+    <string name="zeroseconds">0秒</string>
+    <string name="dot2">.</string>
+    <string name="selecttag">項目を選択してください</string>
+    <string name="calculating">計算中...</string>
+    <string name="thingthisaplicando">このアプリができること</string>
+    <string name="houtouse1">使用方法</string>
+    <string name="newone">追加された機能</string>
+    <string name="onetotwo">①-2</string>
+    <string name="onetoone">①-1</string>
+    <string name="onetothee">①-3</string>
+    <string name="onetofur">①-4</string>
+    <string name="starfive">★5評価お願いします! ↓をタップ！</string>
+    <string name="url2">https://play.google.com/store/apps/details?id=root.main</string>
+    <string name="inputmode">入力モード</string>
+    <string name="tidiin">タイム/距離</string>
+    <string name="skip">スキップ</string>
+    <string name="setting">設定</string>
+    <string name="animset">アニメーション設定</string>
+    <string name="animdesc">アニメーションのあり/なしを切り替えます</string>
+    <string name="startset">スタート画面表示設定</string>
+    <string name="startdesc">スタート画面のあり/なしを切り替えます</string>
+    <string name="aboutrunningmania">ランニングマニアについて</string>
+    <string name="dback">&lt;前へ</string>
+    <string name="dnext">次へ></string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seve">7</string>
+    <string name="moreculculate">さらに計算</string>
+    <string name="aroundyamanote">山手線一周 34.5km</string>
+    <string name="betwtando">東京-大阪 間 約545km</string>
+    <string name="aroundeatth">地球一周 約4万km</string>
+    <string name="tomoon">月まで 約38.4万km</string>
+    <string name="evaluation">このアプリを評価する</string>
+    <string name="km">km</string>
+    <string name="distance">ききょｋｙｋ</string>
+</resources>
