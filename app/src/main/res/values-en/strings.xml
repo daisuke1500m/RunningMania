@@ -20,6 +20,7 @@
     <string name="time">Time</string>
     <string name="minutes">mins</string>
     <string name="seconds">secs</string>
+    <string name="sec">Second</string>
     <string name="howtouse">How To Use</string>
     <string name="docalculate">Calculate</string>
     <string-array name="action_list">
@@ -98,18 +99,18 @@
     <string name="twodots">Probably there are points more than two.</string>
     <string name="copied1"></string>
     <string name="copied2"> was copied into clipboard</string>
-    <string name="description1">1.Function of "Running Mania"1\nThis app can calculate Avg. pace of 1km by inputting distance[km] and time[h/m/s].</string>
+    <string name="description1">1.Function of "Running Mania"1\nThis app can calculate Avg pace of 1km by inputting distance[km] and time[h/m/s].</string>
     <string name="description2">2.Function of Running Mania\nThis can also calculate the time to run a major distance in that pace, and the inputted distance at the bellow area.</string>
     <string name="description3">3.How to Use, Input1\n
-        please input distance at the area written DISTANCE.\nIt is convenient to use the button written POINT.\n
+        please input distance at the area written DISTANCE. It is convenient to use the button written POINT.\n
         You can input major distance easily to use pull down menu written Track events.</string>
     <string name="description4">4 How to User, Input2\n
-        The button in the buttom of the screen can change mode. In this mode, You can calculate the time to run a major\n distance and designated distance by inputing pace.</string>
+        The button in the buttom of the screen can change mode. In this mode, You can calculate the time to run a major distance and designated distance by inputing pace.</string>
     <string name="description5">5.How to Use, Input3\n
-        Please input hours, minutes, and seconds  of the time at the each area. You do not have\n
+        Please input hours, minutes, and seconds  of the time at the each area. You do not have
         to fill All area. (e.g. 4min24sec, just 2 hour)</string>
     <string name="description6">6.Calculation\n
-        Please touch calculate button to get result.(The result appears after animation performed\n in case of 'perform animation'  in the setting turned on.)</string>
+        Please touch calculate button to get result. (The result appears after animation performed in case of \'perform animation\'  in the setting turned on.)</string>
     <string name="description7">7.Please rate us!\n
         Rating this app makes developer pleased! Please rate this app from the bellow button.</string>
 </resources>
