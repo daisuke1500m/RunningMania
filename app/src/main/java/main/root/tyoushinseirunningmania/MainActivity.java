@@ -6,6 +6,7 @@ import java.util.Arrays;
 import android.net.Uri;
 import android.os.Bundle;
 //import android.preference.PreferenceFragment;
+import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.app.Activity;
 import android.content.ClipData;
@@ -50,7 +51,6 @@ public class MainActivity extends Activity {
 	private static Context mContext;
 	static String[] description = new String[7];
 	private AdView mAdView;
-
 	/*viewparam
 	 *1 activity_main
 	 *2 activity_input
@@ -897,4 +897,17 @@ public class MainActivity extends Activity {
 	public static Context getContext(){
 		return mContext;
 	}
+
+    public static class SettingFragment extends PreferenceFragment {
+        public SettingFragment() {
+            // Required empty public constructor
+        }
+
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            addPreferencesFromResource(R.xml.preference);
+        }
+    }
+
 }
