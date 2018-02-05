@@ -474,7 +474,6 @@ public class MainActivity extends Activity {
 			if(str.split(" ").length > 3) {
 				str = str.substring(str.indexOf(" ") + 1, str.length());
 			}
-            //changed
 			SharedPreferences.Editor editor = autotextspref.edit();
 			editor.putString(getString(R.string.autotexts), str);
 			editor.apply();
