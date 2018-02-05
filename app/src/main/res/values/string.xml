@@ -59,7 +59,7 @@
     <string name="starfive">Rating delights us!↓ Please!</string>
     <string name="url2">https://play.google.com/store/apps/details?id=root.main</string>
     <string name="inputmode">Input Mode</string>
-    <string name="tidiin">time/distance</string>
+    <string name="tidiin">Time/Distance</string>
     <string name="skip">skip</string>
     <string name="setting">setting</string>
     <string name="animset">animation setting</string>
@@ -81,7 +81,7 @@
     <string name="betwtando">Tokyo-Osaka, about 545km</string>
     <string name="aroundeatth">One round of the earth, \nabout 40Mkm</string>
     <string name="tomoon">To the Moon about 3.84Mkm</string>
-    <string name="evaluation">Rate this app</string>
+    <string name="evaluation">Rate This App</string>
     <string name="meter">m</string>
     <string name="km">km</string>
     <string name="distance">Distance</string>
@@ -113,4 +113,5 @@
         Please touch calculate button to get result. (The result appears after animation performed in case of \'perform animation\'  in the setting turned on.)</string>
     <string name="description7">7.Please rate us!\n
         Rating this app makes developer pleased! Please rate this app from the bellow button.</string>
+    <string name="autotexts">autotexts</string>
 </resources>
