@@ -60,7 +60,7 @@
     <string name="url2">https://play.google.com/store/apps/details?id=root.main</string>
     <string name="inputmode">Input Mode</string>
     <string name="tidiin">Time/Distance</string>
-    <string name="skip">skip</string>
+    <string name="pref1">pref1</string>
     <string name="setting">setting</string>
     <string name="animset">animation setting</string>
     <string name="animdesc">switch on/off of</string>
@@ -80,7 +80,7 @@
     <string name="aroundyamanote">One round of the Yamanote Line 34.5km</string>
     <string name="betwtando">Tokyo-Osaka, about 545km</string>
     <string name="aroundeatth">One round of the earth, \nabout 40,000km</string>
-    <string name="tomoon">To the Moon, \nabout 384,000KM</string>
+    <string name="tomoon">To the Moon, \nabout 384,400KM</string>
     <string name="meter">m</string>
     <string name="km">km</string>
     <string name="distance">Distance</string>
@@ -88,7 +88,8 @@
     <string name="pleasetime">Please input time</string>
     <string name="inputteddata">Inputed data:</string>
     <string name="hour">Hour</string>
-    <string name="hours">hours</string>
+    <string name="hours">hrs</string>
+    <string name="skip">Skip</string>
     <string name="pleasetime2">Please input minutes and seconds of the avarage pace</string>
     <string name="endcalculation">Finished calculation!\nPlease push Next.</string>
     <string name="year">years</string>
@@ -107,11 +108,14 @@
         The button in the buttom of the screen can change mode. In this mode, You can calculate the time to run a major distance and designated distance by inputing pace.</string>
     <string name="description5">5.How to Use, Input3\n
         Please input hours, minutes, and seconds  of the time at the each area. You do not have
-        to fill all area. (e.g. 4min24sec, just 2 hour)</string>
+        to fill all area. (e.g. 4mins24secs, just 2 hours)</string>
     <string name="description6">6.Calculation\n
         Please touch calculate button to get result. (The result appears after animation performed in case of \'perform animation\'  in the setting turned on.)</string>
     <string name="description7">7.Please rate us!\n
         Rating this app makes developer pleased! Please rate this app from the below button.</string>
     <string name="autotexts">autotexts</string>
     <string name="evaluation">Rate This App</string>
+    <string name="appid">ca-app-pub-7322752472482251~8000906423</string>
+    <string name="adunitid">ca-app-pub-7322752472482251/5495475660</string>
+    <string name="perkm">/km</string>
 </resources>

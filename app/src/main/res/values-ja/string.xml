@@ -77,21 +77,21 @@
     <string name="aroundyamanote">山手線一周 34.5km</string>
     <string name="betwtando">東京-大阪 間 約545km</string>
     <string name="aroundeatth">地球一周 約4万km</string>
-    <string name="tomoon">月まで 約38.4万km</string>
+    <string name="tomoon">月まで 約384,400km</string>
     <string name="evaluation">このアプリを評価する</string>
     <string name="km">km</string>
     <string name="distance">距離</string>
     <string name="meter">m</string>
     <string name="pleasedistance">距離を入力してください</string>
     <string name="pleasetime">タイムを入力してください</string>
-    <string name="inputteddata">Inputed data:</string>
+    <string name="inputteddata">入力されたデータ</string>
     <string name="hour">時間</string>
     <string name="hours">時間</string>
     <string name="pleasetime2">分と秒の欄に１kmの平均ペースを入力してください</string>
     <string name="endcalculation">計算完了！\n進むを押してください</string>
     <string name="year">年</string>
     <string name="days">日</string>
-    <string name="youcancalculate">下の欄に距離を入力すると、\nその距離を何分ではしりきれるのか計算できます。</string>
+    <string name="youcancalculate">下の欄に距離を入力すると、\nその距離を何分で走りきれるのか計算できます。</string>
     <string name="notext">多分空欄です</string>
     <string name="twodots">多分２つ以上小数点があります</string>
     <string name="copied1">クリップボードに「</string>
@@ -114,4 +114,5 @@
         いるとアニメーションが実行された後に結果が表示されます。）</string>
     <string name="description7">7.評価のお願い\n
         いただいたレビューはアプリの改善に生かしていきます下のボタンからお願いします！</string>
+    <string name="perkm">/km</string>
 </resources>

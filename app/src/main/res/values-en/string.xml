@@ -19,8 +19,8 @@
     <string name="hurf">Half</string>
     <string name="full">Full</string>
     <string name="time">Time</string>
-    <string name="minutes">minutes</string>
-    <string name="seconds">seconds</string>
+    <string name="minutes">mins</string>
+    <string name="seconds">secs</string>
     <string name="sec">Second</string>
     <string name="howtouse">How To Use</string>
     <string name="docalculate">Calculate</string>
@@ -61,7 +61,7 @@
     <string name="url2">https://play.google.com/store/apps/details?id=root.main</string>
     <string name="inputmode">Input Mode</string>
     <string name="tidiin">Time/Distance</string>
-    <string name="skip">skip</string>
+    <string name="skip">Skip</string>
     <string name="setting">setting</string>
     <string name="animset">animation setting</string>
     <string name="animdesc">switch on/off of</string>
@@ -81,7 +81,7 @@
     <string name="aroundyamanote">One round of the Yamanote Line 34.5km</string>
     <string name="betwtando">Tokyo-Osaka, about 545km</string>
     <string name="aroundeatth">One round of the earth, \nabout 40,000km</string>
-    <string name="tomoon">To the Moon about 384,000km</string>
+    <string name="topref1">To the pref1, about 384,400km</string>
     <string name="evaluation">Rate This App</string>
     <string name="meter">m</string>
     <string name="km">km</string>
@@ -90,7 +90,7 @@
     <string name="pleasetime">Please input time</string>
     <string name="inputteddata">Inputed data:</string>
     <string name="hour">Hour</string>
-    <string name="hours">hours</string>
+    <string name="hours">hrs</string>
     <string name="pleasetime2">Please input minutes and seconds of the avarage pace</string>
     <string name="endcalculation">Finished calculation!\nPlease push Next.</string>
     <string name="year">years</string>
@@ -109,9 +109,10 @@
         The button in the buttom of the screen can change input mode. In this mode, You can calculate the time to run a major distance and designated distance by inputted pace.</string>
     <string name="description5">5.How to Use, Input3\n
         Please input hours, minutes, and seconds  of the time at the each area. You do not have
-        to fill all area. (e.g. 4min24sec, just 2 hour)</string>
+        to fill all area. (e.g. 4mins24secs, just 2 hours)</string>
     <string name="description6">6.Calculation\n
         Please touch calculate button to get result. (The result appears after animation performed in case of \'perform animation\'  in the setting turned on.)</string>
     <string name="description7">7.Please rate us!\n
         Rating this app makes developer pleased! Please rate this app from the below button.</string>
+    <string name="perkm">/km</string>
 </resources>

@@ -46,8 +46,8 @@ public class MainActivity extends Activity {
 	static int seconds = 0,minutes = 0,hours = 0,viewparam = 0,inputtype = 1,currentdesc = 3;
 	static boolean flagofKM,flagofAnimation,flagofStart;
 	static Spinner spinner;
-	static SharedPreferences pref1 = null,pref2 = null, autotextspref = null;
-	static String crlf = System.getProperty("line.separator");
+	static SharedPreferences pref1 = null;
+	//static String crlf = System.getProperty("line.separator");
 	private static Context mContext;
 	static String[] description = new String[7];
 	private AdView mAdView;
@@ -60,15 +60,15 @@ public class MainActivity extends Activity {
 	 *6 activity_input2
 	 *7 activity_result_more
 	 *	*/
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		MobileAds.initialize(this, getString(R.string.appid));
 		mContext = this;
 		pref1 = PreferenceManager.getDefaultSharedPreferences(this);
 		flagofStart = pref1.getBoolean("start",true);
-		pref2 = PreferenceManager.getDefaultSharedPreferences(this);
-		flagofAnimation = pref2.getBoolean("animation",true);
+		flagofAnimation = pref1.getBoolean("animation",true);
 
 		if(!flagofStart){
 			viewparam = 2;
@@ -79,11 +79,6 @@ public class MainActivity extends Activity {
 			setContentView(R.layout.activity_main);
 			viewparam = 1;
 		}
-
-		/*Locale locale = Locale.getDefault();
-		String language = locale.getLanguage();
-		Toast.makeText(this, language, Toast.LENGTH_LONG).show();*/
-		MobileAds.initialize(this, "ca-app-pub-7322752472482251/5495475660");
 		mAdView = findViewById(R.id.adView);
 		AdRequest adRequest = new AdRequest.Builder().build();
 		mAdView.loadAd(adRequest);
@@ -109,55 +104,58 @@ public class MainActivity extends Activity {
 			EditText edittext4 = findViewById(R.id.editText4);
 
 			edittext1.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-			@Override
-			public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-				if(event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER){
-					EditText t = findViewById(R.id.editText2);
-					t.requestFocus();
-					return true;
+				@Override
+				public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+					if(event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER){
+						EditText t = findViewById(R.id.editText2);
+						t.requestFocus();
+						return true;
+					}
+					return false;
 				}
-				return false;
-			}
 			});
 
 			edittext2.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-		@Override
-		public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-			if(event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER){
-				EditText t = findViewById(R.id.editText3);
-				t.requestFocus();
-				return true;
-			}
-			return false;
-		}
+				@Override
+				public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+					if(event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER){
+						EditText t = findViewById(R.id.editText3);
+						t.requestFocus();
+						return true;
+					}
+					return false;
+				}
 			});
 
 			edittext3.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-		@Override
-		public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-			// TODO Auto-generated method stub
-			if(event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER){
-				EditText t = findViewById(R.id.editText4);
-				t.requestFocus();
-				return true;
-			}
-			return false;
-		}
+				@Override
+				public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+					// TODO Auto-generated method stub
+					if(event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER){
+						EditText t = findViewById(R.id.editText4);
+						t.requestFocus();
+						return true;
+					}
+					return false;
+				}
 			});
 
 			edittext4.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-		@Override
-		public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-			// TODO Auto-generated method stub
-			if(event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER){
-				OnButtonClick_calculation(findViewById(R.id.button1));
-				return true;
-			}
-			return false;
-		}
+				@Override
+				public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+					// TODO Auto-generated method stub
+					if(event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER){
+						OnButtonClick_calculation(findViewById(R.id.button1));
+						return true;
+					}
+					return false;
+				}
 			});
 		}else if(inputtype == 2){
 			setContentView(R.layout.activity_input2);
+			mAdView = findViewById(R.id.adView);
+			AdRequest adRequest = new AdRequest.Builder().build();
+			mAdView.loadAd(adRequest);
 			viewparam = 6;
 		}
 	}
@@ -215,6 +213,10 @@ public class MainActivity extends Activity {
 		if(inputtype == 1){
 			inputtype = 2;
 			setContentView(R.layout.activity_input2);
+			mAdView = findViewById(R.id.adView);
+			AdRequest adRequest = new AdRequest.Builder().build();
+			mAdView.loadAd(adRequest);
+
 			viewparam = 6;
 		}
 		else{
@@ -256,6 +258,9 @@ public class MainActivity extends Activity {
 
 	public void OnButtonClick_gotodesc(View view){
 		setContentView(R.layout.activity_description);
+		mAdView = findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder().build();
+		mAdView.loadAd(adRequest);
 		viewparam = 5;
 		TextView textview = findViewById(R.id.textView2);
 		textview.setText(description[0]);
@@ -468,13 +473,13 @@ public class MainActivity extends Activity {
 				}
 			}
 
-			autotextspref = PreferenceManager.getDefaultSharedPreferences(this);
-			String str = autotextspref.getString(getString(R.string.autotexts), "");
+			pref1 = PreferenceManager.getDefaultSharedPreferences(this);
+			String str = pref1.getString(getString(R.string.autotexts), "");
 			str = str + String.valueOf(distance) + " ";
 			if(str.split(" ").length > 3) {
 				str = str.substring(str.indexOf(" ") + 1, str.length());
 			}
-			SharedPreferences.Editor editor = autotextspref.edit();
+			SharedPreferences.Editor editor = pref1.edit();
 			editor.putString(getString(R.string.autotexts), str);
 			editor.apply();
 
@@ -491,38 +496,41 @@ public class MainActivity extends Activity {
 	public void OnButtonClick_calculation2(View view){
 		InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 		imm.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-		  for(;;){
-		 EditText edittext1 = findViewById(R.id.editText1);
-		 EditText edittext2 = findViewById(R.id.editText2);
+		for(;;){
+			EditText edittext1 = findViewById(R.id.editText1);
+			EditText edittext2 = findViewById(R.id.editText2);
 
-		 if("".equals(edittext1.getText().toString()) && "".equals(edittext2.getText().toString())){
-			  Toast.makeText(this, getString(R.string.pleasetime2),Toast.LENGTH_SHORT).show();
-			  break;
-	     }
-		  String e1 = edittext1.getText().toString();
-		  String e2 = edittext2.getText().toString();
-		  if("".equals(e1))
-		  e1 = "0";
-		  if("".equals(e2))
-		  e2 = "0";
+			if("".equals(edittext1.getText().toString()) && "".equals(edittext2.getText().toString())){
+				Toast.makeText(this, getString(R.string.pleasetime2),Toast.LENGTH_SHORT).show();
+				break;
+			}
+			String e1 = edittext1.getText().toString();
+			String e2 = edittext2.getText().toString();
+			if("".equals(e1))
+				e1 = "0";
+			if("".equals(e2))
+				e2 = "0";
 
-		  inputeddata = getString(R.string.inputteddata) + e1 + getString(R.string.minutes) + getString(R.string.seconds) + "�b/km";
-		  result = Integer.parseInt(e1) * 60 + Integer.parseInt(e2);
+			inputeddata = getString(R.string.inputteddata) + e1 + getString(R.string.minutes) + e2 + getString(R.string.seconds) + getString(R.string.perkm);
+			result = Integer.parseInt(e1) * 60 + Integer.parseInt(e2);
 
-		  BigDecimal big = new BigDecimal(3600/result);
-		  Akph = big.setScale(2,BigDecimal.ROUND_DOWN).doubleValue();
+			BigDecimal big = new BigDecimal(3600/result);
+			Akph = big.setScale(2,BigDecimal.ROUND_DOWN).doubleValue();
 
-		  if(!flagofAnimation){
-		  gotoresult();
-		  }else{
-		  animation(view);
-		  }
-		  break;
-		  	}
+			if(!flagofAnimation){
+				gotoresult();
+			}else{
+				animation(view);
+			}
+			break;
+		}
 	}
 
 	public void animation(View view){
 		setContentView(R.layout.activity_animation);//animation
+		mAdView = findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder().build();
+		mAdView.loadAd(adRequest);
 		viewparam = 3;
 		ImageView imageview = findViewById(R.id.imageView1);
 		TranslateAnimation translate = new TranslateAnimation(0,650,0,0);
@@ -616,6 +624,9 @@ public class MainActivity extends Activity {
 
 	public void OnButtonClick_gotoresult(View view){
 		setContentView(R.layout.activity_result);
+		mAdView = findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder().build();
+		mAdView.loadAd(adRequest);
 		flagofKM = true;
 		viewparam = 4;
 		TextView textview1 = findViewById(R.id.textView1);
@@ -645,6 +656,9 @@ public class MainActivity extends Activity {
 	//activity_result
 	public void gotoresult(){
 		setContentView(R.layout.activity_result);
+		mAdView = findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder().build();
+		mAdView.loadAd(adRequest);
 		flagofKM = true;
 		viewparam = 4;
 		TextView textview1 = findViewById(R.id.textView1);
@@ -674,6 +688,9 @@ public class MainActivity extends Activity {
 	public void OnButtonClick_gotormotr(View view){
 		viewparam = 7;
 		setContentView(R.layout.activity_result_more);
+		mAdView = findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder().build();
+		mAdView.loadAd(adRequest);
 		TextView textview1 = findViewById(R.id.textView2);
 		TextView textview2 = findViewById(R.id.textView4);
 		TextView textview3 = findViewById(R.id.textView6);
@@ -682,7 +699,7 @@ public class MainActivity extends Activity {
 		textview1.setText(calculatetodistance(34.5));
 		textview2.setText(calculatetodistance(545));
 		textview3.setText(calculatetodistance(40000));
-		textview4.setText(calculatetodistance(384000));
+		textview4.setText(calculatetodistance(384400));
 		textview5.setText(calculatetodistance(1));
 	}
 
@@ -755,6 +772,9 @@ public class MainActivity extends Activity {
 
 	public void showinput(){
 		setContentView(R.layout.activity_input);
+		mAdView = findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder().build();
+		mAdView.loadAd(adRequest);
 		spinner = findViewById(R.id.spinner1);
 		ArrayAdapter adapter = ArrayAdapter.createFromResource(
 				this,
@@ -799,8 +819,8 @@ public class MainActivity extends Activity {
 			}
     	});
 
-    	autotextspref = PreferenceManager.getDefaultSharedPreferences(this);
-    	autocompletedata = autotextspref.getString(getString(R.string.autotexts), "").split(" ");
+    	pref1 = PreferenceManager.getDefaultSharedPreferences(this);
+    	autocompletedata = pref1.getString(getString(R.string.autotexts), "").split(" ");
     	AutoCompleteTextView edittext1 = findViewById(R.id.editText1);
 		ArrayAdapter<String> edittextadapter= new ArrayAdapter<String>(this, R.layout.listitem, autocompletedata);
 		edittext1.setAdapter(edittextadapter);
@@ -861,14 +881,6 @@ public class MainActivity extends Activity {
 	    return false;
 	  }
 
-	/*public static class MyPrefsFragment extends PreferenceFragment {
-		@Override
-		public void onCreate(Bundle savedInstanceState) {
-			super.onCreate(savedInstanceState);
-			addPreferencesFromResource(R.xml.preference);
-		}
-	}*/
-
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -890,8 +902,8 @@ public class MainActivity extends Activity {
 		super.onResume();
 		pref1 = PreferenceManager.getDefaultSharedPreferences(this);
 		flagofStart = pref1.getBoolean("start", true);
-		pref2 = PreferenceManager.getDefaultSharedPreferences(this);
-		flagofAnimation = pref2.getBoolean("animation",true);
+		pref1 = PreferenceManager.getDefaultSharedPreferences(this);
+		flagofAnimation = pref1.getBoolean("animation",true);
 	}
 
 	public static Context getContext(){
