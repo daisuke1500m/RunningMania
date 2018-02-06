@@ -115,4 +115,7 @@
     <string name="description7">7.評価のお願い\n
         いただいたレビューはアプリの改善に生かしていきます下のボタンからお願いします！</string>
     <string name="perkm">/km</string>
+    <string name="pref1">pref1</string>
+    <string name="appid">ca-app-pub-7322752472482251~8000906423</string>
+    <string name="adunitid">ca-app-pub-7322752472482251/5495475660</string>
 </resources>

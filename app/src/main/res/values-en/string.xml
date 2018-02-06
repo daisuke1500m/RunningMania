@@ -81,7 +81,8 @@
     <string name="aroundyamanote">One round of the Yamanote Line 34.5km</string>
     <string name="betwtando">Tokyo-Osaka, about 545km</string>
     <string name="aroundeatth">One round of the earth, \nabout 40,000km</string>
-    <string name="topref1">To the pref1, about 384,400km</string>
+    <string name="tomoon">To the Moon, about 384,400km</string>
+    <string name="pref1">pref1</string>
     <string name="evaluation">Rate This App</string>
     <string name="meter">m</string>
     <string name="km">km</string>
@@ -115,4 +116,6 @@
     <string name="description7">7.Please rate us!\n
         Rating this app makes developer pleased! Please rate this app from the below button.</string>
     <string name="perkm">/km</string>
+    <string name="appid">ca-app-pub-7322752472482251~8000906423</string>
+    <string name="adunitid">ca-app-pub-7322752472482251/5495475660</string>
 </resources>
