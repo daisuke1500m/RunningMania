@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "main.root.tyoushinseirunningmania"
-        minSdkVersion 18
+        minSdkVersion 20
         targetSdkVersion 26
         versionCode 13
         versionName "3.1.0"
