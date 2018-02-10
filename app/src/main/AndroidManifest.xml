@@ -7,7 +7,7 @@
 
         android:label="@string/app_name"
         android:icon="@mipmap/tempicon"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/roundicon3"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
