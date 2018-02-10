@@ -4,8 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/runningicon"
+
         android:label="@string/app_name"
+        android:icon="@mipmap/tempicon"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
