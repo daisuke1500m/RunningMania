@@ -33,7 +33,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="75dp"
         android:layout_centerHorizontal="true"
-        android:background="@mipmap/color"
+        android:background="@drawable/color"
         android:onClick="OnButtonClick_gotoresult"
         android:text="@string/skip" />
 

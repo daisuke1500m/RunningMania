@@ -176,7 +176,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="40dp"
         android:layout_marginTop="250dp"
-        android:background="@mipmap/color2"
+        android:background="@drawable/color2"
         android:onClick="OnButtonClick_gotodesc"
         android:text="@string/howtouse"
         android:textSize="15sp" />
@@ -188,7 +188,7 @@
         android:layout_alignStart="@+id/button7"
         android:layout_alignTop="@+id/button7"
         android:layout_marginStart="140dp"
-        android:background="@mipmap/color"
+        android:background="@drawable/color"
         android:onClick="OnButtonClick_calculation"
         android:text="@string/docalculate" />
 

@@ -71,7 +71,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:onClick="OnButtonClick_start"
-        android:background="@mipmap/color3"
+        android:background="@drawable/color3"
         android:text="@string/start"
         android:textSize="25sp" />
 
