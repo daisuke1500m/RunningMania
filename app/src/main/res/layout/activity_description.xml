@@ -19,8 +19,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="15dp"
+		android:layout_marginLeft="15dp"
         android:layout_marginTop="25dp"
         android:text="@string/howtouse"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -31,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView1"
+		android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="14dp"
         android:text="@string/hello_world"
@@ -43,6 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/button1"
         android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
         android:orientation="horizontal" >
 
         <TextView
@@ -111,7 +115,9 @@
         android:layout_alignBaseline="@+id/button1"
         android:layout_alignBottom="@+id/button1"
         android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
         android:layout_marginEnd="68dp"
+		android:layout_marginRight="68dp"
         android:onClick="OnButtonClick_nextdesc"
         android:text="@string/dnext" />
 
@@ -121,7 +127,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
         android:layout_marginStart="68dp"
+		android:layout_marginLeft="68dp"
         android:layout_marginBottom="130dp"
         android:onClick="OnButtonClick_backdesc"
         android:text="@string/dback" />
