@@ -10,7 +10,9 @@ public class MyPreferenceActivity extends  PreferenceActivity{
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		addPreferencesFromResource(R.xml.preference);
+        getFragmentManager().beginTransaction()
+                .replace(android.R.id.content, new MainActivity.SettingFragment())
+                .commit();
 	}
 	
 }

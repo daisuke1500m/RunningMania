@@ -903,14 +903,13 @@ public class MainActivity extends Activity {
         // TODO Auto-generated method stub
         switch (item.getItemId()) {
             case R.id.setting:
-                getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new MainActivity.SettingFragment())
-                    .commit();
+                Intent intent = new Intent(this, MyPreferenceActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.about:
-                Intent intent = new Intent(this, AboutActivity.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(this, AboutActivity.class);
+                startActivity(intent2);
                 break;
         }
         return super.onOptionsItemSelected(item);
