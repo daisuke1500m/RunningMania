@@ -9,7 +9,5 @@
         android:key="animation"
         android:title="@string/animset"
         android:summary="@string/animdesc"
-        android:defaultValue="true"
-
-    />
+        android:defaultValue="true"/>
 </PreferenceScreen>
