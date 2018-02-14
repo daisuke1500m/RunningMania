@@ -827,12 +827,6 @@ public class MainActivity extends Activity {
 		edittext1.setThreshold(1);
 
 	}
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
 
 	@Override
 	  public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -866,39 +860,65 @@ public class MainActivity extends Activity {
 	    	  gotoresult();
 	      }
 	       else{
-	    	  if(inputtype == 1){
-         	  viewparam = 2;
-  	    	  inputtype = 1;
-  	    	  showinput();
-	    	  }else{
-	    	  setContentView(R.layout.activity_input2);
-	    	  viewparam = 2;
-	    	  inputtype = 2;
-	    	  }
-	      }
-	      return true;
-	    }
-	    return false;
-	  }
+               if(inputtype == 1){
+                   viewparam = 2;
+                   inputtype = 1;
+                   showinput();
+               }else{
+                   setContentView(R.layout.activity_input2);
+                   viewparam = 2;
+                   inputtype = 2;
+               }
+           }
+            return true;
+        }
+        return false;
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// TODO Auto-generated method stub
-		if(item.getItemId() == R.id.setting){
-			Intent intent = new Intent(this,MyPreferenceActivity.class);
-			startActivity(intent);
-		}
-		if(item.getItemId() == R.id.about){
-			Intent intent = new Intent(this,AboutActivity.class);
-			startActivity(intent);
-		}
-		return super.onOptionsItemSelected(item);
-	}
+    /*@Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        if(item.getItemId() == R.id.setting){
+            //Intent intent = new Intent(this,MyPreferenceActivity.class);
+            //startActivity(intent);
+            getFragmentManager().beginTransaction()
+                    .replace(android.R.id.content, new MainActivity.SettingFragment())
+                    .commit();
+        }
+        if(item.getItemId() == R.id.about){
+            Intent intent = new Intent(this, AboutActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }*/
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        switch (item.getItemId()) {
+            case R.id.setting:
+                getFragmentManager().beginTransaction()
+                    .replace(android.R.id.content, new MainActivity.SettingFragment())
+                    .commit();
+                break;
 
-	@Override
+            case R.id.about:
+                Intent intent = new Intent(this, AboutActivity.class);
+                startActivity(intent);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
 	protected void onResume() {
-		// TODO Auto-generated method stub
+	    //TODO Auto-generated method stub
 		super.onResume();
 		pref1 = PreferenceManager.getDefaultSharedPreferences(this);
 		flagofStart = pref1.getBoolean("start", true);
@@ -911,10 +931,6 @@ public class MainActivity extends Activity {
 	}
 
     public static class SettingFragment extends PreferenceFragment {
-        public SettingFragment() {
-            // Required empty public constructor
-        }
-
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);

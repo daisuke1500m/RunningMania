@@ -6,8 +6,10 @@
         android:summary="@string/startdesc"
         android:defaultValue="true"/>
     <CheckBoxPreference
-        android:summary="@string/animdesc"
-        android:defaultValue="true" android:key="animation"
+        android:key="animation"
         android:title="@string/animset"
+        android:summary="@string/animdesc"
+        android:defaultValue="true"
+
     />
 </PreferenceScreen>
