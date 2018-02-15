@@ -1,10 +1,11 @@
 package main.root.tyoushinseirunningmania;
 
 //import root.main.R;
+import android.app.Activity;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-public class MyPreferenceActivity extends  PreferenceActivity{
+public class MyPreferenceActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
