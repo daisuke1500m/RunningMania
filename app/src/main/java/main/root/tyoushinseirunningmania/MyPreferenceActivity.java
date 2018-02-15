@@ -14,5 +14,4 @@ public class MyPreferenceActivity extends  PreferenceActivity{
                 .replace(android.R.id.content, new MainActivity.SettingFragment())
                 .commit();
 	}
-	
 }
