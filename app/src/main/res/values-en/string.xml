@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources>
     <string name="app_name">Runner\'z</string>
     <string name="action_settings">Settings</string>
@@ -67,7 +66,7 @@
     <string name="animdesc">switch on/off of</string>
     <string name="startset">first display setting</string>
     <string name="startdesc">switch on/off of first display</string>
-    <string name="aboutrunningmania">About Running Mania</string>
+    <string name="aboutrunningmania">About Runner\'z</string>
     <string name="dback">&lt;Prev</string>
     <string name="dnext">Next></string>
     <string name="one">1</string>
@@ -78,10 +77,10 @@
     <string name="six">6</string>
     <string name="seve">7</string>
     <string name="moreculculate">Calculate more</string>
-    <string name="aroundyamanote">One round of the Yamanote Line 34.5km</string>
+    <string name="aroundyamanote">Yamanote Line, 34.5km</string>
     <string name="betwtando">Tokyo-Osaka, about 545km</string>
-    <string name="aroundeatth">One round of the earth, \nabout 40,000km</string>
-    <string name="tomoon">To the Moon, \nabout 384,400km</string>
+    <string name="aroundeatth">The Earth, about 40,000km</string>
+    <string name="tomoon">The Moon, about 384,400km</string>
     <string name="pref1">pref1</string>
     <string name="evaluation">Rate This App</string>
     <string name="meter">m</string>
@@ -102,9 +101,9 @@
     <string name="copied1"></string>
     <string name="copied2"> was copied into clipboard</string>
     <string name="description1">1.Function of "Running Mania"1\nThis app can calculate Avg pace of 1km by inputting distance[km] and time[h/m/s].</string>
-    <string name="description2">2.Function of Running Mania2\nThis App can also calculate the time to run a major distance in that pace, and the inputted distance at the below area.</string>
+    <string name="description2">2.Function of Running Mania2\nThis App can also calculate the time to run a major distance in that pace, and the inputted distance at the below area of the result screen.</string>
     <string name="description3">3.How to Use, Input1\n
-        Please input distance at the area written "DISTANCE Input". It is convenient to use the button written Decimal point.\n
+        Please input distance at the area written "Distance Input". It is convenient to use the button written Decimal point.\n
         You can input major distance easily to use pull down menu written Track events.</string>
     <string name="description4">4 How to User, Input2\n
         The button in the buttom of the screen can change input mode. In this mode, You can calculate the time to run a major distance and designated distance by inputted pace.</string>
@@ -116,6 +115,7 @@
     <string name="description7">7.Please rate us!\n
         Rating this app makes developer pleased! Please rate this app from the below button.</string>
     <string name="perkm">/km</string>
+    <string name="morethanzero">The distance has to be larger than 0.</string>
     <string name="appid">ca-app-pub-7322752472482251~8000906423</string>
     <string name="adunitid">ca-app-pub-7322752472482251/5495475660</string>
 </resources>

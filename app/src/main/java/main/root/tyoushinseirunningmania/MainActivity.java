@@ -438,16 +438,28 @@ public class MainActivity extends AppCompatActivity {
 			edittext4.setText("");
 			break;
 		}
-		if(flagofKM)
+		else if(Double.parseDouble(edittext1.getText().toString()) == 0.0){
+			Toast.makeText(this, getString(R.string.morethanzero), Toast.LENGTH_SHORT).show();
+            edittext2.requestFocus();
+            edittext2.setText("");
+			edittext3.requestFocus();
+			edittext3.setText("");
+			edittext4.requestFocus();
+			edittext4.setText("");
+			break;
+		}
+
+		if (flagofKM) {
 			distance = Double.parseDouble(edittext1.getText().toString());
-		else
-			distance = Double.parseDouble(edittext1.getText().toString()) / 1000;
+		}
+		else {
+            distance = Double.parseDouble(edittext1.getText().toString()) / 1000;
+        }
+            hours = Integer.parseInt(edittext2.getText().toString());
+            minutes = Integer.parseInt(edittext3.getText().toString());
+            seconds = Integer.parseInt(edittext4.getText().toString());
 
-			hours = Integer.parseInt(edittext2.getText().toString());
-			minutes = Integer.parseInt(edittext3.getText().toString());
-			seconds = Integer.parseInt(edittext4.getText().toString());
-
-			BigDecimal big = new BigDecimal((hours * 3600 + minutes * 60 + seconds) / distance);
+            BigDecimal big = new BigDecimal((hours * 3600 + minutes * 60 + seconds) / distance);
 			result = big.setScale(3,BigDecimal.ROUND_DOWN).doubleValue();
 
 			//Akph = Math.floor((3600 / result) * 100) / 100;

@@ -254,7 +254,6 @@
 
     <Button
         android:id="@+id/button5"
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/button3"
@@ -262,6 +261,7 @@
         android:layout_toRightOf="@+id/editText1"
         android:onClick="OnButtonClick_dot2"
         android:text="@string/dot2" />
+    <!--style="?android:attr/buttonStyleSmall"-->
 
     <Button
         android:id="@+id/button2"
@@ -333,15 +333,15 @@
 
     <Button
         android:id="@+id/button6"
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="75dp"
+        android:layout_marginBottom="60dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:onClick="OnButtonClick_gotormotr"
         android:text="@string/moreculculate" />
+    <!--style="?android:attr/buttonStyleSmall"-->
 
     <Button
         android:id="@+id/button4"

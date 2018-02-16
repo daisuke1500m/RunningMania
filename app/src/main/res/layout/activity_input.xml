@@ -31,7 +31,6 @@
 
     <Button
         android:id="@+id/button1"
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/editText1"
@@ -40,6 +39,7 @@
         android:layout_toRightOf="@+id/editText1"
         android:onClick="OnButtonClick_changeunit"
         android:text="@string/kirometers" />
+    <!--style="?android:attr/buttonStyleSmall"-->
 
     <Button
         android:id="@+id/button2"
