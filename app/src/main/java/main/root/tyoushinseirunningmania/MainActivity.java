@@ -1,14 +1,11 @@
 package main.root.tyoushinseirunningmania;
 
 import java.math.BigDecimal;
-import java.util.Arrays;
 
 import android.net.Uri;
 import android.os.Bundle;
-//import android.preference.PreferenceFragment;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
-import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipDescription;
 import android.content.ClipboardManager;
@@ -17,7 +14,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -49,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
 	static boolean flagofKM,flagofAnimation,flagofStart;
 	static Spinner spinner;
 	static SharedPreferences pref1 = null;
-	//static String crlf = System.getProperty("line.separator");
 	private static Context mContext;
 	static String[] description = new String[7];
 	private AdView mAdView;
@@ -228,36 +223,6 @@ public class MainActivity extends AppCompatActivity {
 		}
 	}
 
-	/*public void OnButtonClick_sercleone(View view){
-		TextView textview = findViewById(R.id.textView1);
-		textview.setText(description[0]);
-	}
-
-	public void OnButtonClick_sercletwo(View view){
-		TextView textview = findViewById(R.id.textView1);
-		textview.setText(description[1]);
-	}
-
-	public void OnButtonClick_serclethree(View view){
-		TextView textview = findViewById(R.id.textView1);
-		textview.setText(description[2]);
-	}
-
-	public void OnButtonClick_serclefour(View view){
-		TextView textview = findViewById(R.id.textView1);
-		textview.setText(description[3]);
-	}
-
-	public void OnButtonClick_serclefive(View view){
-		TextView textview = findViewById(R.id.textView1);
-		textview.setText(description[4]);
-	}
-
-	public void OnButtonClick_serclesix(View view){
-		TextView textview = findViewById(R.id.textView1);
-		textview.setText(description[5]);
-	}*/
-
 	public void OnButtonClick_gotodesc(View view){
 		setContentView(R.layout.activity_description);
 		mAdView = findViewById(R.id.adView);
@@ -268,140 +233,141 @@ public class MainActivity extends AppCompatActivity {
 		textview.setText(description[0]);
 		currentdesc = 3;
 	}
+
 	public void OnButtonClick_backdesc(View view){
 		switch(currentdesc){
-		case 4:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[0]);
-			TextView textview1 = findViewById(R.id.textView3);
-			TextView textview2 = findViewById(R.id.textView4);
-			textview1.setTextColor(Color.WHITE);
-			textview2.setTextColor(Color.BLACK);
-			currentdesc--;
-			break;
-		}
-		case 5:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[1]);
-			TextView textview1 = findViewById(R.id.textView4);
-			TextView textview2 = findViewById(R.id.textView5);
-			textview1.setTextColor(Color.WHITE);
-			textview2.setTextColor(Color.BLACK);
-			currentdesc--;
-			break;
-		}
-		case 6:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[2]);
-			TextView textview1 = findViewById(R.id.textView5);
-			TextView textview2 = findViewById(R.id.textView6);
-			textview1.setTextColor(Color.WHITE);
-			textview2.setTextColor(Color.BLACK);
-			currentdesc--;
-			break;
-		}
-		case 7:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[3]);
-			TextView textview1 = findViewById(R.id.textView6);
-			TextView textview2 = findViewById(R.id.textView7);
-			textview1.setTextColor(Color.WHITE);
-			textview2.setTextColor(Color.BLACK);
-			currentdesc--;
-			break;
-		}
-		case 8:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[4]);
-			TextView textview1 = findViewById(R.id.textView7);
-			TextView textview2 = findViewById(R.id.textView8);
-			textview1.setTextColor(Color.WHITE);
-			textview2.setTextColor(Color.BLACK);
-			currentdesc--;
-			break;
-		}
-		case 9:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[5]);
-			TextView textview1 = findViewById(R.id.textView8);
-			TextView textview2 = findViewById(R.id.textView9);
-			textview1.setTextColor(Color.WHITE);
-			textview2.setTextColor(Color.BLACK);
-			currentdesc--;
-			break;
-		}
+			case 4:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[0]);
+				TextView textview1 = findViewById(R.id.textView3);
+				TextView textview2 = findViewById(R.id.textView4);
+				textview1.setTextColor(Color.WHITE);
+				textview2.setTextColor(Color.BLACK);
+				currentdesc--;
+				break;
+			}
+			case 5:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[1]);
+				TextView textview1 = findViewById(R.id.textView4);
+				TextView textview2 = findViewById(R.id.textView5);
+				textview1.setTextColor(Color.WHITE);
+				textview2.setTextColor(Color.BLACK);
+				currentdesc--;
+				break;
+			}
+			case 6:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[2]);
+				TextView textview1 = findViewById(R.id.textView5);
+				TextView textview2 = findViewById(R.id.textView6);
+				textview1.setTextColor(Color.WHITE);
+				textview2.setTextColor(Color.BLACK);
+				currentdesc--;
+				break;
+			}
+			case 7:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[3]);
+				TextView textview1 = findViewById(R.id.textView6);
+				TextView textview2 = findViewById(R.id.textView7);
+				textview1.setTextColor(Color.WHITE);
+				textview2.setTextColor(Color.BLACK);
+				currentdesc--;
+				break;
+			}
+			case 8:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[4]);
+				TextView textview1 = findViewById(R.id.textView7);
+				TextView textview2 = findViewById(R.id.textView8);
+				textview1.setTextColor(Color.WHITE);
+				textview2.setTextColor(Color.BLACK);
+				currentdesc--;
+				break;
+			}
+			case 9:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[5]);
+				TextView textview1 = findViewById(R.id.textView8);
+				TextView textview2 = findViewById(R.id.textView9);
+				textview1.setTextColor(Color.WHITE);
+				textview2.setTextColor(Color.BLACK);
+				currentdesc--;
+				break;
+			}
 		}
 	}
+
 	public void OnButtonClick_nextdesc(View view){
 		switch(currentdesc){
-		case 3:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[1]);
-			TextView textview1 = findViewById(R.id.textView3);
-			TextView textview2 = findViewById(R.id.textView4);
-			textview2.setTextColor(Color.WHITE);
-			textview1.setTextColor(Color.BLACK);
-			currentdesc++;
-			break;
-		}
-		case 4:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[2]);
-			TextView textview1 = findViewById(R.id.textView4);
-			TextView textview2 = findViewById(R.id.textView5);
-			textview2.setTextColor(Color.WHITE);
-			textview1.setTextColor(Color.BLACK);
-			currentdesc++;
-			break;
-		}
-		case 5:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[3]);
-			TextView textview1 = findViewById(R.id.textView5);
-			TextView textview2 = findViewById(R.id.textView6);
-			textview2.setTextColor(Color.WHITE);
-			textview1.setTextColor(Color.BLACK);
-			currentdesc++;
-			break;
-		}
-		case 6:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[4]);
-			TextView textview1 = findViewById(R.id.textView6);
-			TextView textview2 = findViewById(R.id.textView7);
-			textview2.setTextColor(Color.WHITE);
-			textview1.setTextColor(Color.BLACK);
-			currentdesc++;
-			break;
-		}
-		case 7:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[5]);
-			TextView textview1 = findViewById(R.id.textView7);
-			TextView textview2 = findViewById(R.id.textView8);
-			textview2.setTextColor(Color.WHITE);
-			textview1.setTextColor(Color.BLACK);
-			currentdesc++;
-			break;
-		}
-		case 8:{
-			TextView textview = findViewById(R.id.textView2);
-			textview.setText(description[6]);
-			TextView textview1 = findViewById(R.id.textView8);
-			TextView textview2 = findViewById(R.id.textView9);
-			textview2.setTextColor(Color.WHITE);
-			textview1.setTextColor(Color.BLACK);
-			currentdesc++;
-			break;
-		}
+			case 3:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[1]);
+				TextView textview1 = findViewById(R.id.textView3);
+				TextView textview2 = findViewById(R.id.textView4);
+				textview2.setTextColor(Color.WHITE);
+				textview1.setTextColor(Color.BLACK);
+				currentdesc++;
+				break;
+			}
+			case 4:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[2]);
+				TextView textview1 = findViewById(R.id.textView4);
+				TextView textview2 = findViewById(R.id.textView5);
+				textview2.setTextColor(Color.WHITE);
+				textview1.setTextColor(Color.BLACK);
+				currentdesc++;
+				break;
+			}
+			case 5:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[3]);
+				TextView textview1 = findViewById(R.id.textView5);
+				TextView textview2 = findViewById(R.id.textView6);
+				textview2.setTextColor(Color.WHITE);
+				textview1.setTextColor(Color.BLACK);
+				currentdesc++;
+				break;
+			}
+			case 6:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[4]);
+				TextView textview1 = findViewById(R.id.textView6);
+				TextView textview2 = findViewById(R.id.textView7);
+				textview2.setTextColor(Color.WHITE);
+				textview1.setTextColor(Color.BLACK);
+				currentdesc++;
+				break;
+			}
+			case 7:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[5]);
+				TextView textview1 = findViewById(R.id.textView7);
+				TextView textview2 = findViewById(R.id.textView8);
+				textview2.setTextColor(Color.WHITE);
+				textview1.setTextColor(Color.BLACK);
+				currentdesc++;
+				break;
+			}
+			case 8:{
+				TextView textview = findViewById(R.id.textView2);
+				textview.setText(description[6]);
+				TextView textview1 = findViewById(R.id.textView8);
+				TextView textview2 = findViewById(R.id.textView9);
+				textview2.setTextColor(Color.WHITE);
+				textview1.setTextColor(Color.BLACK);
+				currentdesc++;
+				break;
+			}
 		}
 	}
 
 	public void OnButtonClick_calculation(View view){
 		InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-	    imm.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+		imm.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 		for(;;){
-			//AutoCompleteTextView edittext1 = findViewById(R.id.autocompletetextView);
 			AutoCompleteTextView edittext1 = findViewById(R.id.editText1);
 			EditText edittext2 = findViewById(R.id.editText2);
 			EditText edittext3 = findViewById(R.id.editText3);
@@ -422,47 +388,46 @@ public class MainActivity extends AppCompatActivity {
 				edittext2.requestFocus();
 				edittext2.setText("0");
 				typedtime[1] = false;
-		}
-		if("".equals(edittext3.getText().toString())){
-			edittext3.requestFocus();
-			edittext3.setText("0");
-			typedtime[2] = false;
-		}
-		if(!typedtime[0] && !typedtime[1] && !typedtime[2]){
-			Toast.makeText(this,getString(R.string.pleasetime), Toast.LENGTH_SHORT).show();
-			edittext2.requestFocus();
-	   		edittext2.setText("");
-	   		edittext3.requestFocus();
-		   	edittext3.setText("");
-			edittext4.requestFocus();
-			edittext4.setText("");
-			break;
-		}
-		else if(Double.parseDouble(edittext1.getText().toString()) == 0.0){
-			Toast.makeText(this, getString(R.string.morethanzero), Toast.LENGTH_SHORT).show();
-            edittext2.requestFocus();
-            edittext2.setText("");
-			edittext3.requestFocus();
-			edittext3.setText("");
-			edittext4.requestFocus();
-			edittext4.setText("");
-			break;
-		}
+			}
+			if("".equals(edittext3.getText().toString())){
+				edittext3.requestFocus();
+				edittext3.setText("0");
+				typedtime[2] = false;
+			}
+			if(!typedtime[0] && !typedtime[1] && !typedtime[2]){
+				Toast.makeText(this, getString(R.string.pleasetime), Toast.LENGTH_SHORT).show();
+				edittext2.requestFocus();
+				edittext2.setText("");
+				edittext3.requestFocus();
+				edittext3.setText("");
+				edittext4.requestFocus();
+				edittext4.setText("");
+				break;
+			}
+			else if(Double.parseDouble(edittext1.getText().toString()) == 0.0){
+				Toast.makeText(this, getString(R.string.morethanzero), Toast.LENGTH_SHORT).show();
+				edittext2.requestFocus();
+				edittext2.setText("");
+				edittext3.requestFocus();
+				edittext3.setText("");
+				edittext4.requestFocus();
+				edittext4.setText("");
+				break;
+			}
 
-		if (flagofKM) {
-			distance = Double.parseDouble(edittext1.getText().toString());
-		}
-		else {
-            distance = Double.parseDouble(edittext1.getText().toString()) / 1000;
-        }
-            hours = Integer.parseInt(edittext2.getText().toString());
-            minutes = Integer.parseInt(edittext3.getText().toString());
-            seconds = Integer.parseInt(edittext4.getText().toString());
+			if (flagofKM) {
+				distance = Double.parseDouble(edittext1.getText().toString());
+			}
+			else {
+				distance = Double.parseDouble(edittext1.getText().toString()) / 1000;
+			}
+			hours = Integer.parseInt(edittext2.getText().toString());
+			minutes = Integer.parseInt(edittext3.getText().toString());
+			seconds = Integer.parseInt(edittext4.getText().toString());
 
-            BigDecimal big = new BigDecimal((hours * 3600 + minutes * 60 + seconds) / distance);
+			BigDecimal big = new BigDecimal((hours * 3600 + minutes * 60 + seconds) / distance);
 			result = big.setScale(3,BigDecimal.ROUND_DOWN).doubleValue();
 
-			//Akph = Math.floor((3600 / result) * 100) / 100;
 			BigDecimal big2 = new BigDecimal(3600/result);
 			Akph = big2.setScale(2,BigDecimal.ROUND_DOWN).doubleValue();
 
@@ -552,8 +517,8 @@ public class MainActivity extends AppCompatActivity {
 		translate.setDuration(getanirunspeed());
 		translate.setAnimationListener(new AnimationListener() {
 			@Override
-    	  	public void onAnimationEnd(Animation animation) {
-    	    	// TODO Auto-generated method stub
+			public void onAnimationEnd(Animation animation) {
+				// TODO Auto-generated method stub
 				TextView textview = findViewById(R.id.textView1);
 				textview.setText(getString(R.string.endcalculation));
 				Button button = findViewById(R.id.button1);
@@ -567,21 +532,20 @@ public class MainActivity extends AppCompatActivity {
 			public void onAnimationStart(Animation animation) {
 				// TODO Auto-generated method stub
 			}
-    	});
+		});
 		imageview.startAnimation(translate);
-		}
+	}
 
 
 	private static long getanirunspeed() {
-		// TODO Auto-generated method stub
 		//min 978 2'30" max 3450 6'00"[ms]
 		long r = 0;
 		if(result * 8.51 > 3450)
-		r = 3450;
+			r = 3450;
 		else if(result * 8.51 < 978)
-		r = 978;
+			r = 978;
 		else
-		r = (int)(result * 8.51);
+			r = (int)(result * 8.51);
 		return r;
 	}
 
@@ -591,9 +555,6 @@ public class MainActivity extends AppCompatActivity {
 			return big.setScale(2,BigDecimal.ROUND_DOWN).doubleValue() + MainActivity.getContext().getString(R.string.seconds);
 		}
 		long result_this = Math.round(result * distance);
-		/*if(result_this <= 60){
-	    return result_this + "�b";
-	    }*/
 		if(result_this <= 3600){
 			int minutes = (int)Math.floor(result_this/60);result_this -= minutes * 60;
 			int seconds = (int)result_this;
@@ -724,7 +685,7 @@ public class MainActivity extends AppCompatActivity {
 
 	public void OnButtonClick_valuation(View view){
 		Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=root.main"));
-		startActivity(intent);                                  //market://details?id=raising.simako
+		startActivity(intent);
 	}
 
 	//result
@@ -746,8 +707,8 @@ public class MainActivity extends AppCompatActivity {
 	public void OnButtonClick_calculate(View view){
 		InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
 		imm.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-		TextView textview1 = findViewById(R.id.textView19);//����
-		TextView textview2 = findViewById(R.id.textView20);//����
+		TextView textview1 = findViewById(R.id.textView19);
+		TextView textview2 = findViewById(R.id.textView20);
 		EditText edittext = findViewById(R.id.editText1);
 
 		for(;;){
@@ -800,9 +761,6 @@ public class MainActivity extends AppCompatActivity {
     	spinner.setSelection(0);
     	spinner.setOnItemSelectedListener(new
             AdapterView.OnItemSelectedListener(){
-    //	    public void OnItemSelected(AdapterView<?> parent,View view,int position,long id){}
-    //		public void OnNothingSelected(AdapterView parent){}
-
     		@Override
     		public void onItemSelected( AdapterView<?> arg0,  View arg1, int arg2,long arg3) {
     			    Spinner spinner = (Spinner)arg0;
@@ -839,7 +797,6 @@ public class MainActivity extends AppCompatActivity {
 		ArrayAdapter<String> edittextadapter= new ArrayAdapter<String>(this, R.layout.listitem, autocompletedata);
 		edittext1.setAdapter(edittextadapter);
 		edittext1.setThreshold(1);
-
 	}
 
 	@Override
@@ -891,27 +848,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
-    /*@Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // TODO Auto-generated method stub
-        if(item.getItemId() == R.id.setting){
-            //Intent intent = new Intent(this,MyPreferenceActivity.class);
-            //startActivity(intent);
-            getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new MainActivity.SettingFragment())
-                    .commit();
-        }
-        if(item.getItemId() == R.id.about){
-            Intent intent = new Intent(this, AboutActivity.class);
-            startActivity(intent);
-        }
-        return super.onOptionsItemSelected(item);
-    }*/
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // TODO Auto-generated method stub
@@ -950,5 +890,4 @@ public class MainActivity extends AppCompatActivity {
             addPreferencesFromResource(R.xml.preference);
         }
     }
-
 }
